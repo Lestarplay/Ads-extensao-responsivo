@@ -261,7 +261,7 @@ header a {
         height: 50px;
     }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .home {
         flex-direction: column;
         align-items: center;
