@@ -124,8 +124,8 @@ header a {
 }
 
 .cakepics img {
-    width: 100%;
-    height: 100%;
+    width: 350px;
+    height: 350px;
 }
 
 .infos {
@@ -171,9 +171,11 @@ header a {
     display: flex;
     flex-direction: column;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 460px) {
     body {
         background-color: var(--cp);
+        max-width: 90%;
+        height: auto;
     }
     header {
         flex-direction: column;
@@ -182,7 +184,7 @@ header a {
     }
 
     header img {
-        width: 100px;
+        width: 100%;
         margin-bottom: 10px;
     }
 
@@ -202,7 +204,7 @@ header a {
     }
     .base1, .base2 {
         min-width: 90%;
-        width: 90%;
+        max-width: 90%;
         height: auto;
         margin-bottom: 20px;
     }
@@ -234,10 +236,12 @@ header a {
         flex-wrap: wrap;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 3550px) {
     .home {
         flex-direction: column;
         align-items: center;
+        min-width: 100%;
+        height: auto;
     }
 
     .base1, .base2 {
@@ -257,19 +261,17 @@ header a {
     }
 
     .imagensbolos img {
-        width: 50px;
-        height: 50px;
+        width: 100px;
+        height: 100px;
     }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 375px) {
     .home {
         flex-direction: column;
         align-items: center;
     }
-
     .base1, .base2 {
         min-width: 80%;
-        width: 80%;
         height: auto;
         margin-bottom: 20px;
     }
